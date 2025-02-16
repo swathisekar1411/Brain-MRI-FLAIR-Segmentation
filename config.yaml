@@ -1,0 +1,23 @@
+base:
+  project: Brain MRI FLAIR segmentation
+
+dataset:
+  raw_dataset: data/raw/lgg-mri-segmentation
+  train_csv: data/preprocessed/train.csv
+  valid_csv: data/preprocessed/valid.csv
+  test_csv: data/preprocessed/test.csv
+  batch_size: 32
+  num_workers: 2
+
+model:
+  in_channels: 3
+  out_channels: 1
+  encoder_name: timm-mobilenetv3_large_100
+  encoder_weights: imagenet
+
+train:
+  lr: 0.001
+  num_epochs: 10
+  checkpoint_path: saved_models/mobilenetv3-flair-segmentation.pth.tar
+  load_checkpoint: False
+  optimized_save_path: ./saved_models/flair-segmentation.pt

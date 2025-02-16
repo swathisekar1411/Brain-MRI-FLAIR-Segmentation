@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  preprocess_data:
+    cmd: python src/preprocess_data.py
+    deps:
+    - path: data/raw/lgg-mri-segmentation
+      md5: 1126d2845e5c6100a08e0aa41ee113eb.dir
+      size: 1056310504
+      nfiles: 7860
+    - path: src/preprocess_data.py
+      md5: 9975ae920e50ff9959a1c1446b4e0d26
+      size: 1428
+    outs:
+    - path: data/preprocessed/test.csv
+      md5: 5c27040ca19b0e191b20ed17e6f26d80
+      size: 156111
+    - path: data/preprocessed/train.csv
+      md5: e5baff538265238a913ee9a0b216dcc0
+      size: 727600
+    - path: data/preprocessed/valid.csv
+      md5: 051723ed3f57f2fd4cb7a047e3acd894
+      size: 156322
