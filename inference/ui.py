@@ -12,7 +12,7 @@ def ui():
         This is a complete MLOPS project.***"
     )
     st.markdown(
-        "## [Code on GitHub](https://github.dev/swathisekar1411/Brain-MRI-FLAIR-Segmentation)"
+        "## [Code on GitHub](https://github.com/swathisekar1411/Brain-MRI-FLAIR-Segmentation)"
     )
 
     st.markdown("# Examples")
