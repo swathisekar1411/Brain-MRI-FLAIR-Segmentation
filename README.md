@@ -25,45 +25,43 @@ The dataset used in this project comes from [Kaggle's Brain MRI Segmentation Dat
 ├── README.md               <- Documentation providing an overview of the project.
 │
 ├── data
-│   ├── processed           <- Final, structured datasets ready for modeling.
-│   └── raw                 <- Original, unprocessed data for reference.
+│   ├── raw                 <- Original, unprocessed data.
+│   ├── lgg-mri-segmentation.dvc <- DVC tracking file for dataset versioning.
 │
-├── saved_models            <- Directory to store trained and serialized models.
+├── images                  <- Visualizations, plots, and generated figures.
+│   ├── logs.png
+│   ├── predictions.png
+│   ├── sample-1.png
 │
 ├── inference               <- Scripts for running inference on new data.
+│   ├── engine.py           <- Inference pipeline script.
+│   ├── result.png          <- Sample inference output.
+│   ├── ui.py               <- UI integration for visualization.
 │
 ├── report                  <- Logs and performance metrics from training.
+│   ├── metrics.json        <- Model evaluation metrics.
 │
-├── images                  <- Visualizations, plots, and generated figures for analysis.
-│
-├── full-requirements.txt   <- Dependencies for reproducing the full development environment.
-│
-├── requirements.txt        <- Dependencies for the production/deployment environment.
-│
-├── dvc.yaml                <- DVC pipeline configuration file.
-│
-├── config.yaml             <- Configuration file with all training parameters.
+├── saved_models            <- Directory to store trained and serialized models.
+│   ├── flair-segmentation.pt <- Saved model checkpoint.
 │
 ├── src                     <- Main source code directory for this project.
 │   ├── __init__.py         <- Marks `src` as a Python package.
-│   ├── utils.py            <- Utility functions for common tasks.
+│   ├── dataset.py          <- Dataset class and loaders.
 │   ├── early_stopping.py   <- Implementation of early stopping to prevent overfitting.
-│   │
-│   ├── data                <- Scripts for data processing and loading.
-│   │   ├── preprocess_data.py  <- Data preprocessing scripts.
-│   │   └── dataset.py       <- Dataset class and loaders.
-│   │
-│   ├── models              <- Scripts for model training and optimization.
-│   │   ├── train.py         <- Training script for the model.
-│   │   └── optimize_graph.py <- Optimization techniques for performance improvements.
+│   ├── optimize_graph.py   <- Optimization techniques for performance improvements.
+│   ├── preprocess_data.py  <- Data preprocessing scripts.
+│   ├── train.py            <- Training script for the model.
+│   ├── utils.py            <- Utility functions for common tasks.
 │
 ├── tests                   <- Unit and integration tests for project components.
 │   ├── __init__.py         <- Marks `tests` as a Python package.
 │   ├── config_test.py      <- Unit tests for validating `config.yaml`.
 │
-├── deployment              <- Files and scripts for deployment.
-│   ├── Procfile            <- Deployment configuration for Heroku.
-│   ├── setup.sh            <- Shell script for Heroku deployment setup.
-│   ├── runtime.txt         <- Specifies the Python runtime version for Heroku.
-│
-└── tox.ini                 <- Configuration for running tests using Tox.
+├── config.yaml             <- Configuration file with all training parameters.
+├── dvc.lock                <- Lock file for DVC.
+├── dvc.yaml                <- DVC pipeline configuration file.
+├── full-requirements.txt   <- Dependencies for reproducing the full development environment.
+├── requirements.txt        <- Dependencies for the production/deployment environment.
+├── setup.sh                <- Shell script for deployment setup.
+├── template.py             <- Placeholder template for additional scripts.
+├── tox.ini                 <- Configuration for running tests using Tox.

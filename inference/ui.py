@@ -12,7 +12,7 @@ def ui():
         This is a complete MLOPS project.***"
     )
     st.markdown(
-        "## [Code on GitHub](https://github.com/swathisekar1411/FLAIR-Segmentation-MLOPS)"
+        "## [Code on GitHub](https://github.dev/swathisekar1411/Brain-MRI-FLAIR-Segmentation)"
     )
 
     st.markdown("# Examples")
@@ -37,11 +37,9 @@ def ui():
         """# Connect with me
   [<img height="30" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />][github]
   [<img height="30" src="https://img.shields.io/badge/linkedin-blue.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />][LinkedIn]
-  [<img height="30" src = "https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>][instagram]
   
   [github]: https://github.com/swathisekar1411
-  [instagram]: https://www.instagram.com/swathisekar1411/
-  [linkedin]: https://www.linkedin.com/in/swathisekar1411/""",
+  [linkedin]: https://www.linkedin.com/in/swathi-sekar-/""",
         unsafe_allow_html=True,
     )
 
